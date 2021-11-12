@@ -1,0 +1,7 @@
+// Spellcaster :
+GODtagMasteryTitle005=Spellcaster
+GODtagMasteryBrief005=Spellcaster
+GODtagMasteryDescription005=Spellcaster
+
+// Skills:
+GODtagSpellcasterSkillDesc01=By drawing ancient powers from a different dimension the spellcaster is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels

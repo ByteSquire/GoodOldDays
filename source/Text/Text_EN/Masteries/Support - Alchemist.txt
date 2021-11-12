@@ -1,0 +1,6 @@
+// Support :
+GODtagMasteryTitle007=Support
+GODtagMasteryBrief007=Support
+GODtagMasteryDescription007=Support
+
+// Skills :

@@ -1,0 +1,6 @@
+// Archer : 
+GODtagMasteryTitle001=Archer
+GODtagMasteryBrief001=Archer
+GODtagMasteryDescription001=Archer
+
+// Skills :

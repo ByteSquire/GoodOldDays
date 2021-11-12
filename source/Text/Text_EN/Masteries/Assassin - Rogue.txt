@@ -1,0 +1,6 @@
+// Assassin :
+GODtagMasteryTitle002=Assassin
+GODtagMasteryBrief002=Assassin
+GODtagMasteryDescription002=Assassin
+
+// Skills :

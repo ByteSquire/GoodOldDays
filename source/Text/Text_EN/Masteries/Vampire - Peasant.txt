@@ -1,0 +1,6 @@
+// Vampire :
+GODtagMasteryTitle009=Vampire
+GODtagMasteryBrief009=Vampire
+GODtagMasteryDescription009=Vampire
+
+// Skills :

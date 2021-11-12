@@ -1,0 +1,6 @@
+// Elementalist :
+GODtagMasteryTitle004=Elementalist
+GODtagMasteryBrief004=Elementalist
+GODtagMasteryDescription004=Elementalist
+
+// Skills :
