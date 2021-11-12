@@ -1,0 +1,16 @@
+// King :
+GODtagMasteryTitle003=King
+GODtagMasteryBrief003=King
+GODtagMasteryDescription003=King description
+
+// Skills :
+GODtagKingSkillName01=Temporary Resurrection
+GODtagKingSkillDesc01=Temporary Resurrection description
+GODtagKingSkillName02=Summon Knight
+GODtagKingSkillDesc02=Summon Knight description
+GODtagKingSkillName03=Summon Archer
+GODtagKingSkillDesc03=Summon Archer description
+GODtagKingSkillName04=Summon General
+GODtagKingSkillDesc04=Summon General description
+GODtagKingSkillName05=test
+GODtagKingSkillDesc05=test

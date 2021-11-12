@@ -1,0 +1,6 @@
+// Rogue :
+GODtagMasteryTitle007=Rogue
+GODtagMasteryBrief007=Rogue
+GODtagMasteryDescription007=Rogue description
+
+// Skills :

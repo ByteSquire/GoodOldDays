@@ -1,91 +1,102 @@
-//BEGIN \Masteries\Archer - Ranger.txt
+//BEGIN \Masteries\Alchemist.txt
+// Alchemist :
+GODtagMasteryTitle001=Alchemist
+GODtagMasteryBrief001=Alchemist
+GODtagMasteryDescription001=Alchemist description
+
+// Skills :
+//END \Masteries\Alchemist.txt
+
+//BEGIN \Masteries\Archer.txt
 // Archer : 
-GODtagMasteryTitle001=Archer
-GODtagMasteryBrief001=Archer
-GODtagMasteryDescription001=Archer
+GODtagMasteryTitle002=Archer
+GODtagMasteryBrief002=Archer
+GODtagMasteryDescription002=Archer description
 
 // Skills :
-//END \Masteries\Archer - Ranger.txt
+//END \Masteries\Archer.txt
 
-//BEGIN \Masteries\Assassin - Rogue.txt
-// Assassin :
-GODtagMasteryTitle002=Assassin
-GODtagMasteryBrief002=Assassin
-GODtagMasteryDescription002=Assassin
-
-// Skills :
-//END \Masteries\Assassin - Rogue.txt
-
-//BEGIN \Masteries\Death - Priest.txt
-// Death :
-GODtagMasteryTitle003=Death
-GODtagMasteryBrief003=Death
-GODtagMasteryDescription003=Death
+//BEGIN \Masteries\King.txt
+// King :
+GODtagMasteryTitle003=King
+GODtagMasteryBrief003=King
+GODtagMasteryDescription003=King description
 
 // Skills :
-//END \Masteries\Death - Priest.txt
+GODtagKingSkillName01=Temporary Resurrection
+GODtagKingSkillDesc01=Temporary Resurrection description
+GODtagKingSkillName02=Summon Knight
+GODtagKingSkillDesc02=Summon Knight description
+GODtagKingSkillName03=Summon Archer
+GODtagKingSkillDesc03=Summon Archer description
+GODtagKingSkillName04=Summon General
+GODtagKingSkillDesc04=Summon General description
+GODtagKingSkillName05=test
+GODtagKingSkillDesc05=test
+//END \Masteries\King.txt
 
-//BEGIN \Masteries\Elementalist - Witch(Er).txt
-// Elementalist :
-GODtagMasteryTitle004=Elementalist
-GODtagMasteryBrief004=Elementalist
-GODtagMasteryDescription004=Elementalist
-
-// Skills :
-//END \Masteries\Elementalist - Witch(Er).txt
-
-//BEGIN \Masteries\Summoner - King.txt
-// Summoner :
-GODtagMasteryTitle006=Summoner
-GODtagMasteryBrief006=Summoner
-GODtagMasteryDescription006=Summoner
-
-// Skills :
-//END \Masteries\Summoner - King.txt
-
-//BEGIN \Masteries\Support - Alchemist.txt
-// Support :
-GODtagMasteryTitle007=Support
-GODtagMasteryBrief007=Support
-GODtagMasteryDescription007=Support
+//BEGIN \Masteries\Knight.txt
+// Knight :
+GODtagMasteryTitle004=Knight
+GODtagMasteryBrief004=Knight
+GODtagMasteryDescription004=Knight description
 
 // Skills :
-//END \Masteries\Support - Alchemist.txt
+//END \Masteries\Knight.txt
 
-//BEGIN \Masteries\Tank - Smith.txt
-// Tank :
-GODtagMasteryTitle008=Tank
-GODtagMasteryBrief008=Tank
-GODtagMasteryDescription008=Tank
-
-// Skills :
-//END \Masteries\Tank - Smith.txt
-
-//BEGIN \Masteries\Vampire - Peasant.txt
-// Vampire :
-GODtagMasteryTitle009=Vampire
-GODtagMasteryBrief009=Vampire
-GODtagMasteryDescription009=Vampire
+//BEGIN \Masteries\Peasant.txt
+// Peasant :
+GODtagMasteryTitle005=Peasant
+GODtagMasteryBrief005=Peasant
+GODtagMasteryDescription005=Peasant description
 
 // Skills :
-//END \Masteries\Vampire - Peasant.txt
+//END \Masteries\Peasant.txt
 
-//BEGIN \Masteries\WeaponSpecialist - Knight.txt
-// Weapon Specialist :
-GODtagMasteryTitle010=Weapon Specialist
-GODtagMasteryBrief010=Weapon Specialist
-GODtagMasteryDescription010=Weapon Specialist
+//BEGIN \Masteries\Priest.txt
+// Priest :
+GODtagMasteryTitle006=Priest
+GODtagMasteryBrief006=Priest
+GODtagMasteryDescription006=Priest description
 
 // Skills :
-//END \Masteries\WeaponSpecialist - Knight.txt
+//END \Masteries\Priest.txt
 
-//BEGIN \Masteries\_Spellcaster.txt
-// Spellcaster :
-GODtagMasteryTitle005=Spellcaster
-GODtagMasteryBrief005=Spellcaster
-GODtagMasteryDescription005=Spellcaster
+//BEGIN \Masteries\Rogue.txt
+// Rogue :
+GODtagMasteryTitle007=Rogue
+GODtagMasteryBrief007=Rogue
+GODtagMasteryDescription007=Rogue description
+
+// Skills :
+//END \Masteries\Rogue.txt
+
+//BEGIN \Masteries\Smith.txt
+// Smith :
+GODtagMasteryTitle008=Smith
+GODtagMasteryBrief008=Smith
+GODtagMasteryDescription008=Smith description
+
+// Skills :
+//END \Masteries\Smith.txt
+
+//BEGIN \Masteries\Witch.txt
+// Witch :
+GODtagMasteryTitle009=Witch
+GODtagMasteryBrief009=Witch
+GODtagMasteryDescription009=Witch description
+
+// Skills :
+//END \Masteries\Witch.txt
+
+//BEGIN \Masteries\Wizard.txt
+// Wizard :
+GODtagMasteryTitle010=Wizard
+GODtagMasteryBrief010=Wizard
+GODtagMasteryDescription010=Wizard description
 
 // Skills:
-skillSpellcaster01=By drawing ancient powers from a different dimension the spellcaster is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels
-//END \Masteries\_Spellcaster.txt
+GODtagWizardSkillName01=Spell Surge
+GODtagWizardSkillDesc01=By drawing ancient powers from a different dimension the wizard is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels
+//END \Masteries\Wizard.txt
 

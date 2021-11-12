@@ -1,6 +1,0 @@
-// Tank :
-GODtagMasteryTitle008=Tank
-GODtagMasteryBrief008=Tank
-GODtagMasteryDescription008=Tank
-
-// Skills :

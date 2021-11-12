@@ -1,6 +1,0 @@
-// Summoner :
-GODtagMasteryTitle006=Summoner
-GODtagMasteryBrief006=Summoner
-GODtagMasteryDescription006=Summoner
-
-// Skills :

@@ -1,0 +1,6 @@
+// Peasant :
+GODtagMasteryTitle005=Peasant
+GODtagMasteryBrief005=Peasant
+GODtagMasteryDescription005=Peasant description
+
+// Skills :

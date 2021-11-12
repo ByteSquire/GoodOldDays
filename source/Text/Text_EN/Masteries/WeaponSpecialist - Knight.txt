@@ -1,6 +1,0 @@
-// Weapon Specialist :
-GODtagMasteryTitle010=Weapon Specialist
-GODtagMasteryBrief010=Weapon Specialist
-GODtagMasteryDescription010=Weapon Specialist
-
-// Skills :

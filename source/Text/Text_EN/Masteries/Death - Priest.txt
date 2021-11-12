@@ -1,6 +1,0 @@
-// Death :
-GODtagMasteryTitle003=Death
-GODtagMasteryBrief003=Death
-GODtagMasteryDescription003=Death
-
-// Skills :

@@ -1,0 +1,8 @@
+// Wizard :
+GODtagMasteryTitle010=Wizard
+GODtagMasteryBrief010=Wizard
+GODtagMasteryDescription010=Wizard description
+
+// Skills:
+GODtagWizardSkillName01=Spell Surge
+GODtagWizardSkillDesc01=By drawing ancient powers from a different dimension the wizard is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels
