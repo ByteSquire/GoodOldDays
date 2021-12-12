@@ -1,0 +1,6 @@
+// Undertaker / Necromancer :
+GODtagMasteryTitle011=Undertaker
+GODtagMasteryBrief011=Undertaker
+GODtagMasteryDescription011=Undertaker description
+
+// Skills :

@@ -80,6 +80,15 @@ GODtagMasteryDescription008=Smith description
 // Skills :
 //END \Masteries\Smith.txt
 
+//BEGIN \Masteries\Undertaker-Necromancer.txt
+// Undertaker / Necromancer :
+GODtagMasteryTitle011=Undertaker
+GODtagMasteryBrief011=Undertaker
+GODtagMasteryDescription011=Undertaker description
+
+// Skills :
+//END \Masteries\Undertaker-Necromancer.txt
+
 //BEGIN \Masteries\Witch.txt
 // Witch :
 GODtagMasteryTitle009=Witch
