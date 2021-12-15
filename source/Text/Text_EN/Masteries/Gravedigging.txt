@@ -1,0 +1,6 @@
+// Undertaker / Necromancer :
+GODtagMasteryTitle011=Gravedigging
+GODtagMasteryBrief011=Gravedigging
+GODtagMasteryDescription011=Gravedigging description
+
+// Skills :

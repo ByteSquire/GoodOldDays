@@ -1,6 +1,0 @@
-// Smith :
-GODtagMasteryTitle008=Smith
-GODtagMasteryBrief008=Smith
-GODtagMasteryDescription008=Smith description
-
-// Skills :

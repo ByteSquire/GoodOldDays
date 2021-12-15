@@ -1,0 +1,6 @@
+// Alchemist :
+GODtagMasteryTitle001=Alchemy
+GODtagMasteryBrief001=Alchemy
+GODtagMasteryDescription001=Alchemy description
+
+// Skills :

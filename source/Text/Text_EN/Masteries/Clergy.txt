@@ -1,0 +1,6 @@
+// Priest :
+GODtagMasteryTitle006=Clergy
+GODtagMasteryBrief006=Clergy
+GODtagMasteryDescription006=Clergy description
+
+// Skills :

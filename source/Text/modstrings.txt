@@ -1,11 +1,11 @@
-//BEGIN \Masteries\Alchemist.txt
+//BEGIN \Masteries\Alchemy.txt
 // Alchemist :
-GODtagMasteryTitle001=Alchemist
-GODtagMasteryBrief001=Alchemist
-GODtagMasteryDescription001=Alchemist description
+GODtagMasteryTitle001=Alchemy
+GODtagMasteryBrief001=Alchemy
+GODtagMasteryDescription001=Alchemy description
 
 // Skills :
-//END \Masteries\Alchemist.txt
+//END \Masteries\Alchemy.txt
 
 //BEGIN \Masteries\Archer.txt
 // Archer : 
@@ -15,6 +15,33 @@ GODtagMasteryDescription002=Archer description
 
 // Skills :
 //END \Masteries\Archer.txt
+
+//BEGIN \Masteries\Blacksmithing.txt
+// Smith :
+GODtagMasteryTitle008=Blacksmithing
+GODtagMasteryBrief008=Blacksmithing
+GODtagMasteryDescription008=Blacksmithing description
+
+// Skills :
+//END \Masteries\Blacksmithing.txt
+
+//BEGIN \Masteries\Clergy.txt
+// Priest :
+GODtagMasteryTitle006=Clergy
+GODtagMasteryBrief006=Clergy
+GODtagMasteryDescription006=Clergy description
+
+// Skills :
+//END \Masteries\Clergy.txt
+
+//BEGIN \Masteries\Gravedigging.txt
+// Undertaker / Necromancer :
+GODtagMasteryTitle011=Gravedigging
+GODtagMasteryBrief011=Gravedigging
+GODtagMasteryDescription011=Gravedigging description
+
+// Skills :
+//END \Masteries\Gravedigging.txt
 
 //BEGIN \Masteries\King.txt
 // King :
@@ -35,32 +62,23 @@ GODtagKingSkillName05=test
 GODtagKingSkillDesc05=test
 //END \Masteries\King.txt
 
-//BEGIN \Masteries\Knight.txt
+//BEGIN \Masteries\Knighthood.txt
 // Knight :
-GODtagMasteryTitle004=Knight
-GODtagMasteryBrief004=Knight
-GODtagMasteryDescription004=Knight description
+GODtagMasteryTitle004=Knighthood
+GODtagMasteryBrief004=Knighthood
+GODtagMasteryDescription004=Knighthood description
 
 // Skills :
-//END \Masteries\Knight.txt
+//END \Masteries\Knighthood.txt
 
-//BEGIN \Masteries\Peasant.txt
+//BEGIN \Masteries\Peasantry.txt
 // Peasant :
-GODtagMasteryTitle005=Peasant
-GODtagMasteryBrief005=Peasant
-GODtagMasteryDescription005=Peasant description
+GODtagMasteryTitle005=Peasantry
+GODtagMasteryBrief005=Peasantry
+GODtagMasteryDescription005=Peasantry description
 
 // Skills :
-//END \Masteries\Peasant.txt
-
-//BEGIN \Masteries\Priest.txt
-// Priest :
-GODtagMasteryTitle006=Priest
-GODtagMasteryBrief006=Priest
-GODtagMasteryDescription006=Priest description
-
-// Skills :
-//END \Masteries\Priest.txt
+//END \Masteries\Peasantry.txt
 
 //BEGIN \Masteries\Rogue.txt
 // Rogue :
@@ -71,41 +89,92 @@ GODtagMasteryDescription007=Rogue description
 // Skills :
 //END \Masteries\Rogue.txt
 
-//BEGIN \Masteries\Smith.txt
-// Smith :
-GODtagMasteryTitle008=Smith
-GODtagMasteryBrief008=Smith
-GODtagMasteryDescription008=Smith description
-
-// Skills :
-//END \Masteries\Smith.txt
-
-//BEGIN \Masteries\Undertaker-Necromancer.txt
-// Undertaker / Necromancer :
-GODtagMasteryTitle011=Undertaker
-GODtagMasteryBrief011=Undertaker
-GODtagMasteryDescription011=Undertaker description
-
-// Skills :
-//END \Masteries\Undertaker-Necromancer.txt
-
-//BEGIN \Masteries\Witch.txt
+//BEGIN \Masteries\Witchcraft.txt
 // Witch :
-GODtagMasteryTitle009=Witch
-GODtagMasteryBrief009=Witch
-GODtagMasteryDescription009=Witch description
+GODtagMasteryTitle009=Witchcraft
+GODtagMasteryBrief009=Witchcraft
+GODtagMasteryDescription009=Witchcraft description
 
 // Skills :
-//END \Masteries\Witch.txt
+//END \Masteries\Witchcraft.txt
 
-//BEGIN \Masteries\Wizard.txt
+//BEGIN \Masteries\Wizardry.txt
 // Wizard :
-GODtagMasteryTitle010=Wizard
-GODtagMasteryBrief010=Wizard
-GODtagMasteryDescription010=Wizard description
+GODtagMasteryTitle010=Wizardry
+GODtagMasteryBrief010=Wizardry
+GODtagMasteryDescription010=Wizardry description
 
 // Skills:
 GODtagWizardSkillName01=Spell Surge
 GODtagWizardSkillDesc01=By drawing ancient powers from a different dimension the wizard is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels
-//END \Masteries\Wizard.txt
+//END \Masteries\Wizardry.txt
+
+//BEGIN classnames
+tagCClass08=Alchemist
+tagCClass15=//Alchemist+Archer
+tagCClass07=Archer
+tagCClass14=//King+Alchemist
+tagCClass21=//King+Archer
+tagCClass06=King
+tagCClass13=//Alchemist+Knight
+tagCClass20=//Archer+Knight
+tagCClass26=//King+Knight
+tagCClass05=Knight
+tagCClass11=//Alchemist+Peasant
+tagCClass18=//Archer+Peasant
+tagCClass24=//King+Peasant
+tagCClass29=//Knight+Peasant
+tagCClass03=Peasant
+tagCClass12=//Alchemist+Priest
+tagCClass19=//Archer+Priest
+tagCClass25=//King+Priest
+tagCClass30=//Knight+Priest
+tagCClass33=//Peasant+Priest
+tagCClass02=Priest
+tagCClass10=//Alchemist+Rogue
+tagCClass19=//Archer+Rogue
+tagCClass23=//King+Rogue
+tagCClass28=//Knight+Rogue
+tagCClass35=//Peasant+Rogue
+tagCClass32=//Priest+Rogue
+tagCClass01=Rogue
+tagCClass09=//Alchemist+Smith
+tagCClass16=//Archer+Smith
+tagCClass22=//King+Smith
+tagCClass27=//Knight+Smith
+tagCClass34=//Peasant+Smith
+tagCClass31=//Priest+Smith
+tagCClass36=//Rogue+Smith
+tagCClass04=Smith
+xtagCharacterClass02=//Alchemist+Witch
+xtagCharacterClass03=//Archer+Witch
+xtagCharacterClass04=//King+Witch
+xtagCharacterClass05=//Knight+Witch
+xtagCharacterClass06=//Peasant+Witch
+xtagCharacterClass07=//Priest+Witch
+xtagCharacterClass08=//Rogue+Witch
+xtagCharacterClass09=//Smith+Witch
+xtagCharacterClass01=Witch
+x2tag_class_warfare_rm=//Alchemist+Wizard
+x2tag_class_defense_rm=//Archer+Wizard
+x2tag_class_earth_rm=//King+Wizard
+x2tag_class_storm_rm=//Knight+Wizard
+x2tag_class_stealth_rm=//Peasnat+Wizard
+x2tag_class_hunting_rm=//Priest+Wizard
+x2tag_class_nature_rm=//Rogue+Wizard
+x2tag_class_spirit_rm=//Smith+Wizard
+x2tag_class_dream_rm=//Witch+Wizard
+x2tag_class_rm_rm=Wizard
+x4tagNeidanWarfare=//Alchemist+Undertaker
+x4tagNeidanDefense=//Archer+Undertaker
+x4tagNeidanEarth=//King+Undertaker
+x4tagNeidanStorm=//Knight+Undertaker
+x4tagNeidanRogue=//Peasnat+Undertaker
+x4tagNeidanHunting=//Priest+Undertaker
+x4tagNeidanNature=//Rogue+Undertaker
+x4tagNeidanSpirit=//Smith+Undertaker
+x4tagNeidanDream=//Witch+Undertaker
+x4tagNeidanRune=//Wizard+Undertaker
+x4tagNeidan=Undertaker
+//END classnames
 

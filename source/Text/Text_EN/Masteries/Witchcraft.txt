@@ -1,0 +1,6 @@
+// Witch :
+GODtagMasteryTitle009=Witchcraft
+GODtagMasteryBrief009=Witchcraft
+GODtagMasteryDescription009=Witchcraft description
+
+// Skills :

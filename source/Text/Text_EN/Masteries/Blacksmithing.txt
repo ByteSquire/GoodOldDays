@@ -1,0 +1,6 @@
+// Smith :
+GODtagMasteryTitle008=Blacksmithing
+GODtagMasteryBrief008=Blacksmithing
+GODtagMasteryDescription008=Blacksmithing description
+
+// Skills :

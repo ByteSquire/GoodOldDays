@@ -11,9 +11,12 @@ function Write-Modstring([string] $path) {
 
     ForEach-Object {
         $filename = $_.FullName
-        switch -Wildcard ($filename){
-            '*masteries*' { 
+        switch -Regex ($filename){
+            '.*masteries.*' { 
                 $masteries.Add($filename) 
+            }
+            '.*(C|c)lassnames.*' { 
+                $classnames = $filename 
             }
         }
     }
@@ -26,6 +29,12 @@ function Write-Modstring([string] $path) {
         Add-Content -Path $modstringpath -Value "//END $tmpname`n"
     }
 
+    if ($classnames)
+    {
+        Add-Content -Path $modstringpath -Value "//BEGIN classnames"
+        Add-Content -Path $modstringpath -Value (Get-Content -Path $classnames)
+        Add-Content -Path $modstringpath -Value "//END classnames`n"
+    }
 }
 
 # main

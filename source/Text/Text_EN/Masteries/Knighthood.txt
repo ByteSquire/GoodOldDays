@@ -1,0 +1,6 @@
+// Knight :
+GODtagMasteryTitle004=Knighthood
+GODtagMasteryBrief004=Knighthood
+GODtagMasteryDescription004=Knighthood description
+
+// Skills :
