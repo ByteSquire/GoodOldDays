@@ -1,4 +1,6 @@
 templateName,database\Templates\Skill_BuffRadiusToggled.tpl,
 ActorName,FireMastery_FlameStrike,
 Class,Skill_BuffRadiusToggled,
-buffSkillName,Records\Skills\Earth\FireEnchantmentBuff.dbr,
+FileDescription,,
+buffSkillName,records\goodolddays\data\skills\king\fireenchantmentbuff.dbr,
+instantCast,0,

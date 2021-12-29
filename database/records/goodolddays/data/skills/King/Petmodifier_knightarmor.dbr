@@ -1,0 +1,6 @@
+templateName,Database\templates\skillsecondary_petmodifier.tpl,
+ActorName,,
+Class,SkillSecondary_PetModifier,
+FileDescription,Knight armor increase,
+petSkillName,records\goodolddays\data\skills\king\pets\petskills\knight_armor.dbr,
+fileNameHistoryEntry,CustomMaps\GoodOldDays\records\goodolddays\data\skills\King\New Record.dbr,

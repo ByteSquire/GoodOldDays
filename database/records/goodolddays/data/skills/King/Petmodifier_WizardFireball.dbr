@@ -1,0 +1,7 @@
+templateName,Database\templates\skillsecondary_petmodifier.tpl,
+ActorName,,
+Class,SkillSecondary_PetModifier,
+FileDescription,Give Wizard fireball skill,
+petSkillName,records\goodolddays\data\skills\king\pets\petskills\wizard_fireball.dbr,
+fileNameHistoryEntry,CustomMaps\GoodOldDays\records\goodolddays\data\skills\King\New Record (2).dbr,
+fileNameHistoryEntry,CustomMaps\GoodOldDays\records\goodolddays\data\skills\King\WizardFireball.dbr,
