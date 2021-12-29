@@ -45,9 +45,9 @@ GODtagMasteryDescription011=Gravedigging description
 
 //BEGIN \Masteries\King.txt
 // King :
-GODtagMasteryTitle003=King
-GODtagMasteryBrief003=King
-GODtagMasteryDescription003=King description
+GODtagMasteryTitle003=Leadership
+GODtagMasteryBrief003=Leadership
+GODtagMasteryDescription003=Leadership description
 
 // Skills :
 GODtagKingSkillName01=Temporary Resurrection
@@ -109,7 +109,7 @@ GODtagWizardSkillName01=Spell Surge
 GODtagWizardSkillDesc01=By drawing ancient powers from a different dimension the wizard is able to cast their spells faster.{^n}{^y}Enables double or triple cast of a spell on higher levels
 //END \Masteries\Wizardry.txt
 
-//BEGIN classnames
+//BEGIN \Classnames.txt
 tagCClass08=Alchemist
 tagCClass15=//Alchemist+Archer
 tagCClass07=Archer
@@ -176,5 +176,12 @@ x4tagNeidanSpirit=//Smith+Undertaker
 x4tagNeidanDream=//Witch+Undertaker
 x4tagNeidanRune=//Wizard+Undertaker
 x4tagNeidan=Undertaker
-//END classnames
+//END \Classnames.txt
+
+//BEGIN \ui_overrides.txt
+xtagPetBonusNameAllPets=Bonus to all your Retinue:
+xtagPetBonusNameManyPets=Bonus to your Retinue:
+xtagPetBonusNameOnePet=Bonus to your {%s0} Retinue:
+xtagPetBonusNameTwoPets=Bonus to your {%s0} and {%s1} Retinue:
+//END \ui_overrides.txt
 
