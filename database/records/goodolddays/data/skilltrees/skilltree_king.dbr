@@ -1,4 +1,4 @@
-templateName,Database\templates\GODskilltree.tpl,
+templateName,CustomMaps\GoodOldDays\additional_util\GODtemplates\GODskilltree.tpl,
 ActorName,SummonerSkillTree,
 Class,SkillTree,
 FileDescription,,

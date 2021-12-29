@@ -1,4 +1,4 @@
-templateName,database\Templates\GODskilltree.tpl,
+templateName,CustomMaps\GoodOldDays\additional_util\GODtemplates\GODskilltree.tpl,
 ActorName,WizardSkillTree,
 Class,SkillTree,
 FileDescription,Wizard SkillTree,
