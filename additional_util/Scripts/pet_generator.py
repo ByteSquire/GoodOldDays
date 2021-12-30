@@ -165,15 +165,17 @@ else:
                     filepath = os.path.join(pet_dir_path, filename)
                     file = open(filepath, "r")
                     skip_file = False
+                    tmp_line_dict = {}
+                    tmp_epic_line_dict = {}
+                    tmp_legendary_line_dict = {}
                     for i,line in enumerate(file):
-                        if skip_file:
-                            break
                         key = line.split(",")[0]
                         value = line.split(",")[1]
                         if key == "templateName":
                             if "pet.tpl" not in value.lower():
                                 print(f"WARNING: Pet file {filepath} is using template {value} instead of pet, please change")
                                 skip_file = True
+                                break
                             continue
 
                         keys_to_ignore = ["characterRacialProfile", "monsterMesh", "specialAttack[0-9]Range"]
@@ -182,51 +184,29 @@ else:
                             values = value.split(";")
                             if len(values) != 3:
                                 print(f"WARNING: Pet file {filepath} contains {len(values)} entries for variable {key} instead of 3, please fix!")
-                                append_value_to_dict(line_dict, key, value)
-                                append_value_to_dict(epic_line_dict, key, value)
+                                append_value_to_dict(tmp_line_dict, key, value)
+                                append_value_to_dict(tmp_epic_line_dict, key, value)
                                 append_value_to_dict(legendary_line_dict, key, value)
                             else:
-                                append_value_to_dict(line_dict, key, values[0])
-                                append_value_to_dict(epic_line_dict, key, values[1])
-                                append_value_to_dict(legendary_line_dict, key, values[2])
+                                append_value_to_dict(tmp_line_dict, key, values[0])
+                                append_value_to_dict(tmp_epic_line_dict, key, values[1])
+                                append_value_to_dict(tmp_legendary_line_dict, key, values[2])
                         else:
-                            append_value_to_dict(line_dict, key, value)
-                            append_value_to_dict(epic_line_dict, key, value)
-                            append_value_to_dict(legendary_line_dict, key, value)
-                        continue
+                            append_value_to_dict(tmp_line_dict, key, value)
+                            append_value_to_dict(tmp_epic_line_dict, key, value)
+                            append_value_to_dict(tmp_legendary_line_dict, key, value)
 
-                        if key == "charLevel":
-                            if ";" in value:
-                                values = value.split(";")
-                                if len(values) != 3:
-                                    print(f"Pet file {filepath} contains {len(values)} char level entries instead of 3, please fix!")
-                                    sys.exit(1)
-                                append_value_to_dict(line_dict, "charLevel", values[0])
-                                append_value_to_dict(epic_line_dict, "charLevel", values[1])
-                                append_value_to_dict(legendary_line_dict, "charLevel", values[2])
-                            else:
-                                append_value_to_dict(line_dict, "charLevel", value)
-                            continue
-                                
-                        if key.startswith("skillLevel"):
-                            index = int(key.replace("skillLevel", ""))
-                            if ";" in value:
-                                values = value.split(";")
-                                if len(values) != 3:
-                                    print(f"Pet file {filepath} contains {len(values)} char level entries instead of 3, please fix!")
-                                    sys.exit(1)
-                                append_value_to_dict(line_dict, "skillLevel" + str(index), values[0])
-                                append_value_to_dict(epic_line_dict, "skillLevel" + str(index), values[1])
-                                append_value_to_dict(legendary_line_dict, "skillLevel" + str(index), values[2])
-                            else:
-                                append_value_to_dict(line_dict, "skillLevel" + str(index), value)
-                            continue
-
-                        append_value_to_dict(line_dict, key, value)
                     if skip_file:
                         print(f"INFO: File {filepath} skipped!")
                         continue
-                file.close()
+                    else:
+                        for key in tmp_line_dict.keys():
+                            append_value_to_dict(line_dict, key, tmp_line_dict[key])
+                        for key in tmp_epic_line_dict.keys():
+                            append_value_to_dict(epic_line_dict, key, tmp_epic_line_dict[key])
+                        for key in tmp_legendary_line_dict.keys():
+                            append_value_to_dict(legendary_line_dict, key, tmp_legendary_line_dict[key])
+                    file.close()
 
                 write_godpet_file(open(pet_file_path.replace(".dbr", "_normal.dbr"), "w"), line_dict)
                 
