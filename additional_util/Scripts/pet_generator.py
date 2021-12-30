@@ -166,6 +166,8 @@ else:
                     file = open(filepath, "r")
                     skip_file = False
                     for i,line in enumerate(file):
+                        if skip_file:
+                            break
                         key = line.split(",")[0]
                         value = line.split(",")[1]
                         if key == "templateName":
