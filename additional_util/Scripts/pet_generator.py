@@ -1,10 +1,11 @@
 import os
 import sys
+import re
 
 arguments=sys.argv
 
 if len(arguments) != 3:
-    print("Please specifiy exactly two arguments:")
+    print("ERROR: Please specifiy exactly two arguments:")
     print("arg1: filepath to pet file, arg2: directory path to pet directory")
     sys.exit(1)
 
@@ -68,17 +69,17 @@ def write_pet_files(pet_file_path, num_files, line_dict, epic_line_dict, legenda
                 try:
                     value = values[i]
                 except IndexError:
-                    print(f"Normal difficulty value missing for {key} at level {i+1}")
+                    print(f"WARNING: Normal difficulty value missing for {key} at level {i+1}")
             if epic_values is not None:
                 try:
                     epic_value = epic_values[i]
                 except IndexError:
-                    print(f"Epic difficulty value missing for {key} at level {i+1}")
+                    print(f"WARNING: Epic difficulty value missing for {key} at level {i+1}")
             if legendary_values is not None:
                 try:
                     legendary_value = legendary_values[i]
                 except IndexError:
-                    print(f"Legendary difficulty value missing for {key} at level {i+1}")
+                    print(f"WARNING: Legendary difficulty value missing for {key} at level {i+1}")
             
             pet_file.write(key + "," + value)
             if value != epic_value:
@@ -90,7 +91,7 @@ def write_pet_files(pet_file_path, num_files, line_dict, epic_line_dict, legenda
 if os.path.isfile(pet_file_path):
     if os.path.isdir(pet_dir_path):
         if len(os.listdir(pet_dir_path)) > 0:
-            print(f"Pet directory {pet_dir_path} is not empty, continue? [y/n]")
+            print(f"WARNING: Pet directory {pet_dir_path} is not empty, continue? [y/n]")
             if input().lower() != "y":
                 sys.exit(0)
         line_dict = {"templateName": "database\Templates\Pet.tpl"}
@@ -103,7 +104,7 @@ if os.path.isfile(pet_file_path):
             value = line.split(",")[1]
             if key == "templateName":
                 if "pet.tpl" not in value.lower():
-                    print(f"Pet file is using template {value} instead of pet, please change")
+                    print(f"ERROR: Pet file is using template {value} instead of pet, please change")
                     sys.exit(1)
                 continue
             
@@ -119,7 +120,7 @@ if os.path.isfile(pet_file_path):
             value = line.split(",")[1]
             if key == "templateName":
                 if "pet.tpl" not in value.lower():
-                    print(f"Pet file is using template {value} instead of pet, please change")
+                    print(f"ERROR: Pet file is using template {value} instead of pet, please change")
                     sys.exit(1)
                 continue
             
@@ -135,7 +136,7 @@ if os.path.isfile(pet_file_path):
             value = line.split(",")[1]
             if key == "templateName":
                 if "pet.tpl" not in value.lower():
-                    print(f"Pet file is using template {value} instead of pet, please change")
+                    print(f"ERROR: Pet file is using template {value} instead of pet, please change")
                     sys.exit(1)
                 continue
             
@@ -147,7 +148,7 @@ if os.path.isfile(pet_file_path):
 
         write_pet_files(os.path.join(pet_dir_path, os.path.basename(pet_dir_path) + ".dbr"), num_files, line_dict, epic_line_dict, legendary_line_dict)
     else:
-        print (f"Pet directory {pet_dir_path} not found!")
+        print (f"ERROR: Pet directory {pet_dir_path} not found!")
         sys.exit(1)
 else:
     print(f"Pet file: {pet_file_path} not found!")
@@ -169,18 +170,23 @@ else:
                         value = line.split(",")[1]
                         if key == "templateName":
                             if "pet.tpl" not in value.lower():
-                                print(f"Pet file {filepath} is using template {value} instead of pet, please change")
+                                print(f"WARNING: Pet file {filepath} is using template {value} instead of pet, please change")
                                 skip_file = True
                             continue
 
-                        if ";" in value:
+                        keys_to_ignore = ["characterRacialProfile", "monsterMesh", "specialAttack[0-9]Range"]
+                        regex_from_list = temp = '(?:% s)' % '|'.join(keys_to_ignore)
+                        if ";" in value and not re.match(regex_from_list, key):
                             values = value.split(";")
                             if len(values) != 3:
-                                print(f"Pet file {filepath} contains {len(values)} entries for variable {key} instead of 3, please fix!")
-                                sys.exit(1)
-                            append_value_to_dict(line_dict, key, values[0])
-                            append_value_to_dict(epic_line_dict, key, values[1])
-                            append_value_to_dict(legendary_line_dict, key, values[2])
+                                print(f"WARNING: Pet file {filepath} contains {len(values)} entries for variable {key} instead of 3, please fix!")
+                                append_value_to_dict(line_dict, key, value)
+                                append_value_to_dict(epic_line_dict, key, value)
+                                append_value_to_dict(legendary_line_dict, key, value)
+                            else:
+                                append_value_to_dict(line_dict, key, values[0])
+                                append_value_to_dict(epic_line_dict, key, values[1])
+                                append_value_to_dict(legendary_line_dict, key, values[2])
                         else:
                             append_value_to_dict(line_dict, key, value)
                             append_value_to_dict(epic_line_dict, key, value)
@@ -216,6 +222,7 @@ else:
 
                         append_value_to_dict(line_dict, key, value)
                     if skip_file:
+                        print(f"INFO: File {filepath} skipped!")
                         continue
                 file.close()
 
@@ -225,9 +232,9 @@ else:
                 
                 write_godpet_file(open(pet_file_path.replace(".dbr", "_legendary.dbr"), "w"), legendary_line_dict)
             else:
-                print(f"Pet directory {pet_dir_path} is empty!")
+                print(f"ERROR: Pet directory {pet_dir_path} is empty!")
                 sys.exit(1)
         else:
-            print (f"Pet directory {pet_dir_path} not found!")
+            print (f"ERROR: Pet directory {pet_dir_path} not found!")
             sys.exit(1)
     sys.exit(1)
