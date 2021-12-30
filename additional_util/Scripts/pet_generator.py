@@ -13,6 +13,9 @@ pet_file_path=arguments[1]
 pet_dir_path=arguments[2]
 
 def append_value_to_dict(line_dict, key, value):
+    # ArtManager adds these anyway
+    #if not value:
+    #    return
     if key in line_dict.keys():
         line_dict[key] = line_dict[key] + ";" + value
     else:
@@ -29,7 +32,7 @@ def write_godpet_file(pet_file, line_dict):
         pet_file.write(',\n')
     pet_file.close()
 
-def write_pet_files(pet_file_path, num_files, line_dict, epic_line_dict, legendary_line_dict):   
+def write_pet_files(pet_file_path, num_files, line_dict, epic_line_dict, legendary_line_dict):
     for i in range(num_files):
         pet_file = open(pet_file_path.replace(".dbr", f"_{str(i+1).zfill(2)}.dbr"), "w")
         pet_file.close()
@@ -146,7 +149,7 @@ if os.path.isfile(pet_file_path):
             append_value_to_dict(legendary_line_dict, key, value)
         pet_file.close()
 
-        write_pet_files(os.path.join(pet_dir_path, os.path.basename(pet_dir_path) + ".dbr"), num_files, line_dict, epic_line_dict, legendary_line_dict)
+        write_pet_files(os.path.join(pet_dir_path, os.path.basename(os.path.dirname(pet_dir_path)) + ".dbr"), num_files, line_dict, epic_line_dict, legendary_line_dict)
     else:
         print (f"ERROR: Pet directory {pet_dir_path} not found!")
         sys.exit(1)
@@ -196,9 +199,9 @@ else:
                             append_value_to_dict(tmp_epic_line_dict, key, value)
                             append_value_to_dict(tmp_legendary_line_dict, key, value)
 
+                    file.close()
                     if skip_file:
                         print(f"INFO: File {filepath} skipped!")
-                        continue
                     else:
                         for key in tmp_line_dict.keys():
                             append_value_to_dict(line_dict, key, tmp_line_dict[key])
@@ -206,7 +209,6 @@ else:
                             append_value_to_dict(epic_line_dict, key, tmp_epic_line_dict[key])
                         for key in tmp_legendary_line_dict.keys():
                             append_value_to_dict(legendary_line_dict, key, tmp_legendary_line_dict[key])
-                    file.close()
 
                 write_godpet_file(open(pet_file_path.replace(".dbr", "_normal.dbr"), "w"), line_dict)
                 
