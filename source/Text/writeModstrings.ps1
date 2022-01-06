@@ -1,3 +1,16 @@
+# function for writing content to modstrings file
+function Write-Content([string] $path, [string] $filepath, [hashtable] $replacements) {
+    $tmpname = $filepath.Replace($path, "")
+    $content = (Get-Content -Path $filepath)
+    foreach($key in $replacements.Keys)
+    {
+        $content = $content.Replace($key, $replacements[$key])
+    }
+    Add-Content -Path $modstringpath -Value "//BEGIN $tmpname"
+    Add-Content -Path $modstringpath -Value $content
+    Add-Content -Path $modstringpath -Value "//END $tmpname`n"
+}
+
 # function for language resource folder
 function Write-Modstring([string] $path) {
     $modstringpath = "$path\modstrings.txt"
@@ -6,6 +19,7 @@ function Write-Modstring([string] $path) {
 
     $masteries = New-Object Collections.Generic.List[String]
     $defaultFiles = New-Object Collections.Generic.List[String]
+    $miscTags = @{}
     # add more lists here for different types
 
     Get-ChildItem -Path $path -Recurse -File -Filter "*.txt" |
@@ -19,6 +33,18 @@ function Write-Modstring([string] $path) {
             '.*masteries.*' { 
                 $masteries.Add($filename) 
             }
+            '.*MiscTags.txt' {
+                $miscFile = $filename
+                foreach($line in [System.IO.File]::ReadLines($filename))
+                {
+                    if ($line -like "//*") {
+                        continue
+                    }
+                    $key = $line.split("=")[0]
+                    $value = $line.split("=")[1].split("//")[0]
+                    $miscTags[$key] = $value
+                }
+            }
             default {
                 $defaultFiles.Add($filename)
             }
@@ -27,18 +53,17 @@ function Write-Modstring([string] $path) {
 
     ForEach ($mastery in $masteries)
     { 
-        $tmpname = $mastery.Replace($path, "")
-        Add-Content -Path $modstringpath -Value "//BEGIN $tmpname"
-        Add-Content -Path $modstringpath -Value (Get-Content -Path $mastery)
-        Add-Content -Path $modstringpath -Value "//END $tmpname`n"
+        Write-Content $path $mastery $miscTags
     }
 
     ForEach ($defaultFile in $defaultFiles)
     {
-        $tmpname = $defaultFile.Replace($path, "")
-        Add-Content -Path $modstringpath -Value "//BEGIN $tmpname"
-        Add-Content -Path $modstringpath -Value (Get-Content -Path $defaultFile)
-        Add-Content -Path $modstringpath -Value "//END $tmpname`n"
+        Write-Content $path $defaultFile $miscTags
+    }
+
+    if ($miscFile)
+    {
+        Write-Content $path $miscFile @{}
     }
 }
 
@@ -58,7 +83,7 @@ if (!(Test-Path -Path $path)) {
 Get-Childitem -Directory |
 
 ForEach-Object {
-    Write-Modstring($_.FullName)
+    Write-Modstring $_.FullName
 }
 
 $modstringpath = "modstrings.txt"
