@@ -693,7 +693,7 @@ Group
 			type = "file_dbr"
 			description = "Normal Skilltree maximum"
 			value = ""
-			defaultValue = ""
+			defaultValue = "Normal Skilltree maximum"
 		}
 
 		Variable
@@ -704,6 +704,346 @@ Group
 			description = ""
 			value = ""
 			defaultValue = "0"
+		}
+		
+		Variable
+		{
+			name = "skillName34"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+
+		Variable
+		{
+			name = "skillLevel34"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = "0"
+		}
+		
+		Variable
+		{
+			name = "skillName35"
+			class = "variable"
+			type = "file_dbr"
+			description = "defaultskills maximum. Any more in defaultskills will crash the game"
+			value = ""
+			defaultValue = "defaultskills maximum. Any more in defaultskills will crash the game"
+		}
+
+		Variable
+		{
+			name = "skillLevel35"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = "0"
+		}
+
+		Variable
+		{
+			name = "skillName36"
+			class = "variable"
+			type = "file_dbr"
+			description = "Do not use or any of the following in defaultskills, will crash"
+			value = ""
+			defaultValue = "Do not use or any of the following in defaultskills will crash"
+		}
+
+		Variable
+		{
+			name = "skillLevel36"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+
+		Variable
+		{
+			name = "skillName37"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel37"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName38"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel38"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName39"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel39"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName40"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel40"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName41"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel41"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName42"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel42"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName43"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel43"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName44"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel44"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName45"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel45"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName46"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel46"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName47"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel47"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName48"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel48"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName49"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel49"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillName50"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+		
+		Variable
+		{
+			name = "skillLevel50"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = ""
 		}
 	}
 

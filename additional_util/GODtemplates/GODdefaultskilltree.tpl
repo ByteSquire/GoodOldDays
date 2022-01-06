@@ -50,7 +50,7 @@ Group
 			name = "skillName1"
 			class = "variable"
 			type = "file_dbr"
-			description = "Mastery"
+			description = ""
 			value = ""
 			defaultValue = ""
 		}
@@ -62,7 +62,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -82,7 +82,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -102,7 +102,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -122,7 +122,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -142,7 +142,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -162,7 +162,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -182,7 +182,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -202,7 +202,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -222,7 +222,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -242,7 +242,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -262,7 +262,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -282,7 +282,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -302,7 +302,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -322,7 +322,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -342,7 +342,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -362,7 +362,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -382,7 +382,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -402,7 +402,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -422,7 +422,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -442,7 +442,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -462,7 +462,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -482,7 +482,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -502,7 +502,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -522,7 +522,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -542,7 +542,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -562,7 +562,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -582,7 +582,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -602,7 +602,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -622,7 +622,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -642,7 +642,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 
@@ -663,7 +663,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -683,7 +683,7 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
 
 		Variable
@@ -703,9 +703,48 @@ Group
 			type = "int"
 			description = ""
 			value = ""
-			defaultValue = "0"
+			defaultValue = "1"
 		}
-	}
 
+		Variable
+		{
+			name = "skillName34"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+
+		Variable
+		{
+			name = "skillLevel34"
+			class = "array"
+			type = "int"
+			description = ""
+			value = ""
+			defaultValue = "1"
+		}
+        
+		Variable
+		{
+			name = "skillName35"
+			class = "variable"
+			type = "file_dbr"
+			description = ""
+			value = ""
+			defaultValue = ""
+		}
+
+		Variable
+		{
+			name = "skillLevel35"
+			class = "array"
+			type = "int"
+			description = "default Skilltree maximum"
+			value = ""
+			defaultValue = "1"
+		}
+    }
 }
 
