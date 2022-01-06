@@ -5,6 +5,7 @@ function Write-Modstring([string] $path) {
     else { New-Item -ItemType File $modstringpath }
 
     $masteries = New-Object Collections.Generic.List[String]
+    $defaultFiles = New-Object Collections.Generic.List[String]
     # add more lists here for different types
 
     Get-ChildItem -Path $path -Recurse -File -Filter "*.txt" |
@@ -12,11 +13,14 @@ function Write-Modstring([string] $path) {
     ForEach-Object {
         $filename = $_.FullName
         switch -Regex ($filename){
+            '.*modstrings.txt' {
+                # ignore modstrings for specific languages
+            }
             '.*masteries.*' { 
                 $masteries.Add($filename) 
             }
-            '.*(C|c)lassnames.*' { 
-                $classnames = $filename 
+            default {
+                $defaultFiles.Add($filename)
             }
         }
     }
@@ -29,11 +33,12 @@ function Write-Modstring([string] $path) {
         Add-Content -Path $modstringpath -Value "//END $tmpname`n"
     }
 
-    if ($classnames)
+    ForEach ($defaultFile in $defaultFiles)
     {
-        Add-Content -Path $modstringpath -Value "//BEGIN classnames"
-        Add-Content -Path $modstringpath -Value (Get-Content -Path $classnames)
-        Add-Content -Path $modstringpath -Value "//END classnames`n"
+        $tmpname = $defaultFile.Replace($path, "")
+        Add-Content -Path $modstringpath -Value "//BEGIN $tmpname"
+        Add-Content -Path $modstringpath -Value (Get-Content -Path $defaultFile)
+        Add-Content -Path $modstringpath -Value "//END $tmpname`n"
     }
 }
 

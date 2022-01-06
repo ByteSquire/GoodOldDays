@@ -1,7 +1,7 @@
 // King :
-GODtagMasteryTitle003=King
-GODtagMasteryBrief003=King
-GODtagMasteryDescription003=King description
+GODtagMasteryTitle003=Leadership
+GODtagMasteryBrief003=Leadership
+GODtagMasteryDescription003=Leadership description
 
 // Skills :
 GODtagKingSkillName01=Temporary Resurrection

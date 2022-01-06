@@ -1,0 +1,4 @@
+xtagPetBonusNameAllPets=Bonus to all your Retinue:
+xtagPetBonusNameManyPets=Bonus to your Retinue:
+xtagPetBonusNameOnePet=Bonus to your {%s0} Retinue:
+xtagPetBonusNameTwoPets=Bonus to your {%s0} and {%s1} Retinue:
