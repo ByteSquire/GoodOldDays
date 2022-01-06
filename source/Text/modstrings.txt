@@ -78,6 +78,10 @@ GODtagMasteryBrief005=Peasantry
 GODtagMasteryDescription005=Peasantry description
 
 // Skills :
+GODtagPeasantSkillName01=Brawler
+GODtagPeasantSkillDesc01={^r}DISABLES WEAPONS{^n}{^w}Not able to handle a weapon, the peasant uses their fists in combat.{^n}{^y}Requires any weapon or shield
+GODtagPeasantSkillName02=Rage
+GODtagPeasantSkillDesc02=Hitting enemies with bare fists hurts the peasant, driving them into a rage.
 //END \Masteries\Peasantry.txt
 
 //BEGIN \Masteries\Rogue.txt
@@ -184,4 +188,8 @@ xtagPetBonusNameManyPets=Bonus to your Retinue:
 xtagPetBonusNameOnePet=Bonus to your {%s0} Retinue:
 xtagPetBonusNameTwoPets=Bonus to your {%s0} and {%s1} Retinue:
 //END \ui_overrides.txt
+
+//BEGIN \MiscTags.txt
+GODtagQualiWeaponAll={^y}Requires any weapon or shield
+//END \MiscTags.txt
 

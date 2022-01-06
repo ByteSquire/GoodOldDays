@@ -4,3 +4,7 @@ GODtagMasteryBrief005=Peasantry
 GODtagMasteryDescription005=Peasantry description
 
 // Skills :
+GODtagPeasantSkillName01=Brawler
+GODtagPeasantSkillDesc01={^r}DISABLES WEAPONS{^n}{^w}Not able to handle a weapon, the peasant uses their fists in combat.{^n}GODtagQualiWeaponAll
+GODtagPeasantSkillName02=Rage
+GODtagPeasantSkillDesc02=Hitting enemies with bare fists hurts the peasant, driving them into a rage.
