@@ -1,0 +1,1 @@
+GODtagQualiWeaponAll={^y}Requires any weapon or shield
